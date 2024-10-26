@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Haven</title>
+    <style>
+        /* Resetting margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Main styling for body and background */
+        body, html {
+            height: 100%;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        /* Fixed background image */
+        .background {
+            background-image: url('https://th.bing.com/th/id/OIP.DCcqh87JGOgiYQ5EsllCUgAAAA?w=320&h=180&c=7&r=0&o=5&pid=1.7');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            height: 100%;
+        }
+
+        /* Main content container */
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.6);
+        }
+        .navbar {
+            width: 100%;
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        /* Navigation links styling */
+        .navbar a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 1rem;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        /* Hover effect on links */
+        .navbar a:hover {
+            background-color: #555;
+            color: #ffeb3b;
+        }
+
+        /* Flex layout for navigation links */
+        .navbar .nav-links {
+            display: flex;
+            gap: 20px;}
+
+        /* Header styling with buttons */
+        .header {
+            width: 100%;
+            padding: 15px 30px;
+            position: absolute;
+            top: 0;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .header button {
+            margin-left: 10px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            background-position: fixed;
+            cursor: pointer;
+            background-color: #4caf50;
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+
+        .header button:hover {
+            background-color: #388e3c;
+        }
+
+        /* Main heading styling */
+        h1 {
+            font-size: 4rem;
+            margin-bottom: 10px;
+            color: #fff;
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Subheading */
+        p {
+            font-size: 1.5rem;
+            color: #e0f2f1;
+            max-width: 700px;
+            margin-bottom: 20px;
+        }
+
+        /* Signup and Explore button styling */
+        .btn-container button {
+            background-color: #14f71f;
+            padding: 12px 24px;
+            font-size: 1.2rem;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            color: white;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .btn-container button:hover {
+            background-color: #047709;
+            transform: translateY(-3px);
+        }
+
+        /* Decorative glow effect */
+        .content::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at center, rgba(255, 255, 255, 0.1), transparent);
+            opacity: 0.7;
+            .fgn.nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 1rem;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        /* Hover effect on links */
+       
+        }
+        .rer.navbar {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            transition: background 0.3s ease;
+        }
+
+        /* Navigation links */
+        .rer.navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+            margin: 0 10px;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            font-weight: bold;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        /* Hover effect for links */
+        .rer.navbar a:hover {
+            color: #50df57;
+        }
+
+        /* Hover underline animation effect */
+        .rer.navbar a::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 3px;
+            background: #2acf46;
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .rer.navbar a:hover::after {
+            transform: scaleX(1);
+        }
+
+        /* Spacing to prevent content from hiding behind the fixed navbar */
+        .content {
+            padding-top: 100px;
+            text-align: center;}
+ /* Glass effect container */
+ .nan.nhnsgep {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            height: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+
+        /* Button container for "Sign Up" and "Explore" */
+        .nan.nhnsgep .button-container {
+            display: flex;
+            gap: 20px;
+        }
+
+        /* Individual buttons */
+        .nan.nhnsgep .button-container button {
+            padding: 12px 24px;
+            font-size: 1.2rem;
+            color: white;
+            background-color: #4caf50;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Hover effect */
+        .nan.nhnsgep .button-container button:hover {
+            background-color: #43a047;
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+<body>
+    <!-- Background and fixed header -->
+    <div class="background">
+        <div class="header">
+        
+        </div>
+        
+        <!-- Main content for landing page -->
+        <div class="content">
+            <h1>Welcome to Ever Green</h1>
+            <p>Discover a world of greenery and nurture your love for plants. Join our community to explore, share, and grow together.</p>
+            
+            <div class="btn-container">
+                <button onclick="window.location.href='#signup'">Get Started</button>
+                <button onclick="window.location.href='#explore'">Explore Plants</button>
+            </div>
+        </div>
+    </div>
+    <div class="rer navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    
+</body>
+</html>
